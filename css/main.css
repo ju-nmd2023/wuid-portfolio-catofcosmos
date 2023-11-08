@@ -1,0 +1,97 @@
+/*global*/
+body {
+  background-color: black;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 3rem;
+}
+
+a {
+  color: white;
+}
+
+/* TITLE */
+.myname {
+  font-size: 30px;
+  color: antiquewhite;
+}
+
+h1 {
+  text-align: center;
+  color: antiquewhite;
+}
+
+/*profil pic centrerad etc*/
+.profile-pic {
+  width: 20%;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* INFO*/
+.body-text {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  color: antiquewhite;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+/* contact page */
+
+
+td {
+  color: #fff;
+}
+
+.submit {
+  margin-left: 190px;
+}
+
+.contactform {
+  border: 1px solid #fff;
+  padding: 20px;
+  
+
+}
+
+.contactme {
+    color: #fff;
+    font-size: 20px;
+    
+}
+ 
+/*put in picture later*/
+.contactpic {
+ 
+}
+
+.messagebox {
+
+  height: 250px;
+
+}
+
+/*Art page*/
+.pic {
+  width: 20%;
+}
