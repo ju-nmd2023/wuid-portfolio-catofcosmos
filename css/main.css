@@ -20,14 +20,14 @@ li {
   margin-left: 3rem;
 }
 
-a {
+a,
+p {
   color: white;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 300px) {
   header,
   ul {
-    flex-direction: column;
     align-items: start;
   }
   ul {
@@ -45,7 +45,7 @@ a {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   header {
     font-size: 12px;
   }
@@ -120,6 +120,18 @@ td {
   object-fit: cover;
   margin: 10px;
 }
+/*trying to center and enlarge while hover in gallery*/
+.pic {
+  transition: transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.pic:hover {
+  transform: scale(2.5);
+
+  transform-origin: center;
+}
 
 /* Art page */
 @media screen and (min-width: 520px) {
@@ -127,7 +139,7 @@ td {
     inline-size: 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-self: center;
+    align-self: center center;
   }
 }
 
@@ -138,4 +150,22 @@ td {
     grid-template-columns: repeat(3, 1fr);
     align-self: center;
   }
+}
+/* project page*/
+
+.picproject {
+  width: 200px;
+  height: 260px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px ;
+}
+.projecttext {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  color: antiquewhite;
+  border: 1px solid #fff;
+  padding: 20px;
 }
