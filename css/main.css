@@ -81,9 +81,7 @@ td {
 }
  
 /*put in picture later*/
-.contactpic {
- 
-}
+
 
 .messagebox {
 
@@ -94,4 +92,9 @@ td {
 /*Art page*/
 .pic {
   width: 20%;
+  float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
 }
