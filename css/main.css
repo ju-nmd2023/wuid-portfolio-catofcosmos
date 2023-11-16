@@ -7,6 +7,7 @@ body {
 
 header {
   display: flex;
+  font-size: 16px;
 }
 
 ul {
@@ -23,6 +24,32 @@ a {
   color: white;
 }
 
+@media screen and (max-width: 520px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  ul {
+    margin-top: 0;
+  }
+  li {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 12px;
+  }
+}
 /* TITLE */
 .myname {
   font-size: 30px;
@@ -58,7 +85,6 @@ h1 {
 
 /* contact page */
 
-
 td {
   color: #fff;
 }
@@ -70,31 +96,46 @@ td {
 .contactform {
   border: 1px solid #fff;
   padding: 20px;
-  
-
 }
 
 .contactme {
-    color: #fff;
-    font-size: 20px;
-    
+  color: #fff;
+  font-size: 20px;
 }
- 
+
 /*put in picture later*/
 
-
 .messagebox {
-
   height: 250px;
-
 }
 
 /*Art page*/
+.LOGOCK {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .pic {
-  width: 20%;
-  float: left;
-    width:  200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+/* Art page */
+@media screen and (min-width: 520px) {
+  .artgallerycontainer {
+    inline-size: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .artgallerycontainer {
+    inline-size: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+  }
 }
