@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contactpage</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+
   </head>
   <body>
     <header>
@@ -28,11 +30,7 @@
         </ul>
       </nav>
     </header>
-
     
-    
-
-
     <div class="contactform">
        
         <p class="contactme">Contact Me</p>
@@ -65,8 +63,8 @@
         </tr>
          
       </table>
-      <input class="submit" type="submit" value="Submit">
-    </div>
+      <input class="blinking clicked" type="button" value="Submit" id="thanks" onclick="return submitForm()">
+
     </form>
   </body>
 </html>

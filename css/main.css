@@ -4,6 +4,10 @@ body {
 }
 
 /* HEADER */
+.LOGOCK {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 header {
   display: flex;
@@ -89,8 +93,33 @@ td {
   color: #fff;
 }
 
-.submit {
+/*contact form page*/
+
+.blinking {
+  animation: blink 1.5s ease-in-out; /* Blink three times */
   margin-left: 190px;
+  background-color: #ffffff; /* initial color */
+  transition: background-color 0.5s; /* smooth transition effect */
+  cursor: pointer;
+}
+#blinking.blinking {
+  animation: blink 1.5 s ease-in-out;
+}
+
+
+@keyframes blink {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    background-color: #00ff00; /* Green color */
+  }
+  12.5%,
+  37.5%,
+  62.5% {
+    background-color: transparent; /* Transparent */
+  }
 }
 
 .contactform {
@@ -110,27 +139,39 @@ td {
 }
 
 /*Art page*/
-.LOGOCK {
-  color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 .pic {
-  width: 200px;
-  height: 200px;
+  width: 342.99px;
+  height: 342.99px;
   object-fit: cover;
   margin: 10px;
-}
-/*trying to center and enlarge while hover in gallery*/
-.pic {
+
+  /*trying to center and enlarge while hover in gallery*/
+
   transition: transform 0.2s;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
-.pic:hover {
-  transform: scale(2.5);
+.artOverLay {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 50%;
+}
 
+
+
+.pic:hover {
+  transform: scale(1.5);
+  position: absolute;
   transform-origin: center;
+  z-index: 2;
+  top: 20%;
+  bottom: 20%;
+  width: 50;
+
 }
 
 /* Art page */
@@ -151,6 +192,16 @@ td {
     align-self: center;
   }
 }
+
+.arttext {
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.artworkborder {
+  margin: 10px;
+}
 /* project page*/
 
 .picproject {
@@ -159,7 +210,7 @@ td {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px ;
+  margin-top: 20px;
 }
 .projecttext {
   text-align: center;
