@@ -1,6 +1,6 @@
 
     
-
+/*help from chatgpt and Hjalmar Gren my friend*/
 
 const thanks = document.querySelector("#thanks");
 

@@ -94,12 +94,12 @@ td {
 }
 
 /*contact form page*/
-
+/* help from chatgpt*/
 .blinking {
   animation: blink 1.5s ease-in-out; /* Blink three times */
   margin-left: 190px;
-  background-color: #ffffff; /* initial color */
-  transition: background-color 0.5s; /* smooth transition effect */
+  background-color: #ffffff; 
+  transition: background-color 0.5s; /*trasition*/
   cursor: pointer;
 }
 #blinking.blinking {
@@ -116,8 +116,8 @@ td {
     background-color: #00ff00; /* Green color */
   }
   12.5%,
-  37.5%,
-  62.5% {
+  38.5%,
+  63.5% {
     background-color: transparent; /* Transparent */
   }
 }
